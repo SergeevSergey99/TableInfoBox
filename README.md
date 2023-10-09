@@ -73,7 +73,7 @@ public class StatCurves : ScriptableObject
         headers.Add("Level");
         values.Add("Stat");    
         bonus.Add("Bonus");
-        for (int i = Stats.MIN_LEVEL; i <= Stats.MAX_LEVEL; i++)
+        for (int i = 1; i <= 20; i++)
         {
             headers.Add(i.ToString());
             values.Add(GetValue(i).ToString());
